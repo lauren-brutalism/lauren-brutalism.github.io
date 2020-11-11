@@ -236,7 +236,8 @@ canvas {
 }
 
 #about #about-text img {
-  width: 200px;
+  width: 300px;
+  mix-blend-mode: soft-light;
 }
 
 #contact {
