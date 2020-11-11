@@ -200,25 +200,25 @@ canvas {
 }
 
 @media (min-width: 500px) {
-  #portfolio #my-portfolio .grid-item {
+  .grid-item {
     width: 50%;
   }
 }
 
 @media (min-width: 1000px) {
-  #portfolio #my-portfolio .grid-item {
+  .grid-item {
     width: 33.333%;
   }
 }
 
 @media (min-width: 1700px) {
-  #portfolio #my-portfolio .grid-item {
+  .grid-item {
     width: 25%;
   }
 }
 
 @media (min-width: 2100px) {
-  #portfolio #my-portfolio .grid-item {
+  .grid-item {
     width: 20%;
   }
 }
