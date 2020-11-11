@@ -173,6 +173,11 @@ canvas {
 #portfolio #my-portfolio {
   max-width: 90%;
   margin: 0 auto !important;
+  -webkit-column-width: 300px;
+          column-width: 300px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  padding: 5px !important;
 }
 
 #portfolio #my-portfolio img {
@@ -182,43 +187,6 @@ canvas {
 #portfolio #my-portfolio img:hover {
   -webkit-filter: invert(90%) blur(1px) hue-rotate(115deg);
           filter: invert(90%) blur(1px) hue-rotate(115deg);
-}
-
-#portfolio #my-portfolio .grid {
-  text-align: center;
-  max-width: 95%;
-  margin: 0 auto !important;
-}
-
-#portfolio #my-portfolio .grid-item {
-  padding: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: inline;
-}
-
-@media (min-width: 500px) {
-  .grid-item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 1000px) {
-  .grid-item {
-    width: 33.333%;
-  }
-}
-
-@media (min-width: 1700px) {
-  .grid-item {
-    width: 25%;
-  }
-}
-
-@media (min-width: 2100px) {
-  .grid-item {
-    width: 20%;
-  }
 }
 
 #about {

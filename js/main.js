@@ -2,13 +2,6 @@
 $('.navbar-collapse a').click(function(){
     $(".navbar-collapse").collapse('hide');
 });
-
-//masonry gallery
-$(".grid").imagesLoaded(function() {
-    $(".grid").masonry({
-      itemSelector: ".grid-item"
-    });
-  });
   
-  // curos
-  new emojiCursor({emoji: ["💖", "🦋", "🌈", "🌻"]});
+// curos
+new emojiCursor({emoji: ["💖", "🦋", "🌈", "🌻"]});
