@@ -1,0 +1,18 @@
+#portfolio {
+  text-align: center;
+  background: linear-gradient(to top left, #cc6699, #76bef9);
+  #my-portfolio {
+    max-width: 90%;
+    margin: 0 auto !important;
+    column-width: 300px;
+    column-gap: 5px;
+    padding: 5px !important;
+    img {
+      width: 100%;
+      margin-bottom: 5px !important;
+      &:hover {
+        filter: invert(90%) blur(1px) hue-rotate(115deg);
+      }
+    }
+  }
+}
