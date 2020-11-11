@@ -46,6 +46,14 @@
   background: transparent;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  min-height: -webkit-fill-available;
+}
+
 h1,
 h2,
 h3,
@@ -53,7 +61,6 @@ h4,
 h5,
 h6 {
   font-family: "PlainBlack";
-  font-style: normal;
 }
 
 h2 {
@@ -63,12 +70,7 @@ h2 {
 @font-face {
   font-family: "PlainBlack";
   src: url("../fonts/Plain_Black-webfont.eot");
-  src: url("../fonts/Plain_Black-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Plain_Black-webfont.woff2") format("woff2"),
-    url("../fonts/Plain_Black-webfont.woff") format("woff"),
-    url("../fonts/Plain_Black-webfont.ttf") format("truetype"),
-    url("../fonts/Plain_Black-webfont.svg#plainblacknormal") format("svg");
+  src: url("../fonts/Plain_Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Plain_Black-webfont.woff2") format("woff2"), url("../fonts/Plain_Black-webfont.woff") format("woff"), url("../fonts/Plain_Black-webfont.ttf") format("truetype"), url("../fonts/Plain_Black-webfont.svg#plainblacknormal") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -120,14 +122,14 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .frame #gl {
@@ -145,8 +147,7 @@ h2 {
 }
 
 .frame .frame__content h1 {
-  text-shadow: 2px 2px #cc6699, 3px 3px #cc6699, 4px 4px #cc6699,
-    5px 5px #cc6699;
+  text-shadow: 2px 2px #cc6699, 3px 3px #cc6699, 4px 4px #cc6699, 5px 5px #cc6699;
   font-size: 8rem;
 }
 
@@ -167,13 +168,7 @@ canvas {
 
 #portfolio {
   text-align: center;
-  background: -webkit-gradient(
-    linear,
-    right bottom,
-    left top,
-    from(#cc6699),
-    to(#76bef9)
-  );
+  background: -webkit-gradient(linear, right bottom, left top, from(#cc6699), to(#76bef9));
   background: linear-gradient(to top left, #cc6699, #76bef9);
 }
 
@@ -188,19 +183,19 @@ canvas {
 
 #portfolio #my-portfolio img:hover {
   -webkit-filter: invert(90%) blur(1px) hue-rotate(115deg);
-  filter: invert(90%) blur(1px) hue-rotate(115deg);
+          filter: invert(90%) blur(1px) hue-rotate(115deg);
 }
 
 #portfolio #my-portfolio .grid {
   text-align: center;
-  max-width: 95vw;
-  margin: 2.5vw auto;
+  max-width: 95%;
+  margin: 0 auto !important;
 }
 
 #portfolio #my-portfolio .grid-item {
   padding: 5px;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   display: inline;
 }
 
@@ -232,13 +227,7 @@ canvas {
   text-align: center;
   line-height: 350%;
   width: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#cc6699),
-    to(#76bef9)
-  );
+  background: -webkit-gradient(linear, left top, right bottom, from(#cc6699), to(#76bef9));
   background: linear-gradient(to bottom right, #cc6699, #76bef9);
 }
 
@@ -248,8 +237,7 @@ canvas {
 }
 
 #about #about-photo {
-  background: url(https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80)
-    #460c0c;
+  background: url(https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80) #460c0c;
   background-size: contain;
   padding: 20px;
   background-blend-mode: exclusion;
@@ -264,15 +252,15 @@ canvas {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #about #about-text p {
@@ -286,13 +274,7 @@ canvas {
 
 #contact {
   text-align: center;
-  background: -webkit-gradient(
-    linear,
-    right bottom,
-    left top,
-    from(#cc6699),
-    to(#76bef9)
-  );
+  background: -webkit-gradient(linear, right bottom, left top, from(#cc6699), to(#76bef9));
   background: linear-gradient(to top left, #cc6699, #76bef9);
 }
 
