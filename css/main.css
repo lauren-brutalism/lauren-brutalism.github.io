@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0 !important;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #76bef9;
+  border: 0px solid #000000;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #76bef9;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #76bef9;
+}
+
+::-webkit-scrollbar-track {
+  background: #cc6699;
+  border: 0px solid #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #cc6699;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #cc6699;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PlainBlack";
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+@font-face {
+  font-family: "PlainBlack";
+  src: url("fonts/PlainBlack-Normal.woff2") format("woff2"), url("fonts/PlainBlack-Normal.woff") format("woff"), url("fonts/PlainBlack-Normal.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1001;
+  width: 100%;
+  background: #000;
+}
+
+.navbar a {
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  font-family: "Press Start 2P";
+}
+
+.navbar a:hover {
+  color: #cc6699;
+  letter-spacing: 4px;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    background: #000;
+    color: #fff;
+  }
+  .navbar span {
+    color: #fff;
+    font-size: 3rem;
+  }
+  .navbar span::after {
+    content: "Menu";
+    margin-left: 10px;
+  }
+  .navbar a {
+    color: #fff;
+  }
+}
+
+.frame {
+  text-align: center;
+  position: relative;
+  z-index: 1000;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.frame #gl {
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.frame .frame__content {
+  pointer-events: none;
+  text-align: center;
+  color: #000;
+}
+
+.frame .frame__content h1 {
+  text-shadow: 2px 2px #cc6699, 3px 3px #cc6699, 4px 4px #cc6699, 5px 5px #cc6699;
+  font-size: 8rem;
+}
+
+.frame .frame__content p {
+  font-family: "Press Start 2P";
+  width: 50%;
+  margin: 0 auto !important;
+}
+
+.frame > * {
+  position: relative;
+}
+
+canvas {
+  display: block;
+  z-index: 1000004;
+}
+
+#portfolio {
+  text-align: center;
+  background: -webkit-gradient(linear, right bottom, left top, from(#cc6699), to(#76bef9));
+  background: linear-gradient(to top left, #cc6699, #76bef9);
+}
+
+#portfolio #my-portfolio {
+  width: 90%;
+  margin: 0 auto !important;
+}
+
+#portfolio #my-portfolio img {
+  width: 100%;
+}
+
+#portfolio #my-portfolio img:hover {
+  -webkit-filter: invert(90%) blur(1px) hue-rotate(115deg);
+          filter: invert(90%) blur(1px) hue-rotate(115deg);
+}
+
+#portfolio #my-portfolio .grid {
+  text-align: center;
+  max-width: 95vw;
+  margin: 2.5vw auto;
+}
+
+#portfolio #my-portfolio .grid-item {
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline;
+}
+
+@media (min-width: 500px) {
+  #portfolio #my-portfolio .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #portfolio #my-portfolio .grid-item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1700px) {
+  #portfolio #my-portfolio .grid-item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 2100px) {
+  #portfolio #my-portfolio .grid-item {
+    width: 20%;
+  }
+}
+
+#about {
+  text-align: center;
+  line-height: 350%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#cc6699), to(#76bef9));
+  background: linear-gradient(to bottom right, #cc6699, #76bef9);
+}
+
+#about #about-section {
+  margin: 0 auto !important;
+  width: 90%;
+}
+
+#about #about-photo {
+  background: url(https://images.unsplash.com/photo-1442458017215-285b83f65851?ixlib=rb-1.2.1&auto=format&fit=crop&w=1575&q=80) #460c0c;
+  background-size: contain;
+  padding: 20px;
+  background-blend-mode: exclusion;
+}
+
+#about #about-photo img {
+  mix-blend-mode: exclusion;
+}
+
+#about #about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about #about-text p {
+  font-family: "Press Start 2P";
+  margin-bottom: 10px !important;
+}
+
+#about #about-text img {
+  width: 200px;
+}
+
+#contact {
+  text-align: center;
+  background: -webkit-gradient(linear, right bottom, left top, from(#cc6699), to(#76bef9));
+  background: linear-gradient(to top left, #cc6699, #76bef9);
+}
+
+#contact #form {
+  width: 70%;
+  margin: 0 auto !important;
+  font-family: "Press Start 2P";
+  color: #000;
+}
+
+#contact #form ::-webkit-input-placeholder {
+  color: #000;
+}
+
+#contact #form :-ms-input-placeholder {
+  color: #000;
+}
+
+#contact #form ::-ms-input-placeholder {
+  color: #000;
+}
+
+#contact #form ::placeholder {
+  color: #000;
+}
+
+#contact #form .hide-label {
+  display: none;
+}
+
+#contact #form input[type="text"] {
+  background: #d46a6f;
+  border: 6px dashed #712395;
+}
+
+#contact #form textarea {
+  background: #d46a6f;
+  border: 6px dashed #712395;
+}
+
+#contact #form input[type="submit"] {
+  border: 6px dashed #712395;
+  background: #d46a6f;
+}
+
+#contact #form input[type="submit"]:hover {
+  border: 6px dashed #d46a6f;
+  background: #712395;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  word-spacing: 4rem;
+  padding: 1%;
+}
+
+footer #social-media a {
+  font-size: 3rem;
+  color: #fff;
+}
+
+footer #social-media a:hover {
+  color: #cc6699;
+}
+/*# sourceMappingURL=main.css.map */
