@@ -10,5 +10,5 @@ $(".grid").imagesLoaded(function() {
     });
   });
   
-  // curosr 
+  // curos
   new emojiCursor({emoji: ["💖", "🦋", "🌈", "🌻"]});
